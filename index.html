@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha dia das mães - Império</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo da Empresa" class="logo">
+    </header>
+
+    <div class="banner">
+        <img src="imagens/banner.png" alt="Banner em movimento">
+    </div>
+
+    <!-- Primeira ABA - Formulário de Dados da Nota Fiscal -->
+    <div class="container">
+        <div id="aba1" class="form-container">
+            <h2 class="section-title">Dados do cliente</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Nome completo" id="nome" required>
+                <input type="text" placeholder="Data de nascimento" id="dataNascimento" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="CPF" id="cpf" required>
+                <input type="text" placeholder="Telefone" id="telefone" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" id="email" required>
+            </div>
+
+            <h2 class="section-title">Endereço do cliente</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Estado" id="estado" required>
+                <input type="text" placeholder="Cidade" id="cidade" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="CEP" id="cep" required>
+                <input type="text" placeholder="Bairro" id="logradouro" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Logradouro" class="small-input" id="bairro" required>
+                <input type="text" placeholder="Nº" class="small-input" id="numero" required>
+            </div>
+            <button class="save-button" onclick="salvarDados(1)">Salvar</button>
+        </div>
+
+        <!-- Segunda ABA - Formulário de Dados da Nota Fiscal -->
+        <div id="aba2" class="form-container" style="display:none;">
+            <h2 class="section-title">Dados da Nota Fiscal</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Número da Nota" id="numeroNota" required>
+                <input type="text" placeholder="CNPJ da Empresa" id="cnpj" required>
+            </div>
+            <div class="form-group">
+                <input type="date" id="dataCompra" min="2025-05-01" max="2025-05-31" required>
+            </div>
+            <h2 class="section-title">Por que sua mãe merece um Império?</h2>
+            <div class="form-group">
+                <textarea id="perguntaMae" maxlength="500" required></textarea>
+            </div>
+            <button class="save-button" onclick="salvarDados(2)">Enviar</button>
+        </div>
+        <div class="post-it"></div>
+        <div class="imagemMae">
+            <h1>Sua Mãe Merece um Império</h1>
+            <img src="imagens/mãe.png" alt="Mãe e filhas felizes">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
