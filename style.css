@@ -120,7 +120,6 @@
   }
   
   /* Estiliza os grupos de inputs */
-  /* Estiliza os grupos de inputs */
   .form-group {
     display: flex; /* Usa flexbox para alinhar os inputs */
     flex-wrap: wrap; /* Permite que os inputs se quebrem para a linha seguinte */
@@ -189,15 +188,15 @@
     margin-top: 5px; /* Espaço acima do botão */
   }
   
-  .post-it {
-    width: 47px; /* Largura de 47px */
-    height: 86px; /* Altura de 86px */
-    background-color: #FEBF28; /* Cor amarela */
-    position: relative; /* Necessário para usar 'top' e 'right' */
-    top: -580px; /* Ajusta para cima */
-    right: -630px; /* Ajusta para a direita */
-    z-index: 10; /* Define a ordem de empilhamento, 10 é um valor alto */
-  }
+  /* .post-it {
+    width: 47px; 
+    height: 86px;
+    background-color: #FEBF28; 
+    position: relative; 
+    top: -580px; 
+    right: -630px; 
+    z-index: 10; 
+  } */
   
   /* Estiliza a área de imagem mãe */
   .imagemMae {
